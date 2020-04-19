@@ -105,4 +105,4 @@ If this project help you, you can give me a tip ;)
 * Initial Release : 08 April 2020
 
 ### License
-* PySendMail-Attachements is distributed under the **LGPL** version 3 license.
+* _PySendMail-Attachements_ is distributed under the **LGPL** version 3 license.
