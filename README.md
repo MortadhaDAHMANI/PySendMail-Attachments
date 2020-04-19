@@ -20,8 +20,10 @@ SMTP (*Simple Mail Transfer Protocol*) is a communication protocol for electroni
 ! 250 smtp.gmail.com at your service
 ```
 
+#### Useful links
 * [SMTP CLI](https://www.mailgun.com/blog/which-smtp-port-understanding-ports-25-465-587/ "SMTP CLI")
-
+* [What SMTP](https://www.sparkpost.com/blog/what-smtp-port/ "What SMTP")
+* [SMTP Port](https://www.jscape.com/blog/smtp-ports "SMTP Port")
 
 #### What is MIME?
 MIME (*Multipurpose Internet Mail Extensions*) is an Internet standard that extends the format of email messages to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs. Message bodies may consist of multiple parts, and header information may be specified in non-ASCII character sets. Email messages with MIME formatting are typically transmitted with standard protocols, such as the Simple Mail Transfer Protocol (SMTP), the Post Office Protocol (POP), and the Internet Message Access Protocol (IMAP). 
