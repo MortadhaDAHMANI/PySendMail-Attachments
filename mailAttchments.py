@@ -23,9 +23,9 @@ message["Bcc"] = receiver_email  # Recommended for mass emails
 message.attach(MIMEText(body, "plain"))
 
 #current_dir = os.path.dirname(os.path.realpath(__file__))
-#filename = os.path.join(current_dir, "Python_Module_IHM_PyQt.pdf").replace("\\","/")
+#filename = os.path.join(current_dir, "contact.csv").replace("\\","/")
 
-filename="Python_Module_IHM_PyQt.pdf"
+filename="contact.csv"
 
 # Open PDF file in binary mode
 with open(filename, "rb") as attachment:
