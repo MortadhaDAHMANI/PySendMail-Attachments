@@ -1,6 +1,31 @@
 # PySendMail-Attachments :computer: :e-mail: :key:
 
 ## Summary
+#### What is SMTP?
+SMTP (*Simple Mail Transfer Protocol*) is a communication protocol for electronic mail transmission. As an Internet standard, SMTP was first defined in 1982 by RFC 821, and updated in 2008 by RFC 5321 to Extended SMTP additions, which is the protocol variety in widespread use today. Mail servers and other message transfer agents use SMTP to send and receive mail messages. Proprietary systems such as Microsoft Exchange and IBM Notes and webmail systems such as Outlook.com, Gmail and Yahoo! Mail may use non-standard protocols internally, but all use SMTP when sending to or receiving email from outside their own systems. SMTP servers commonly use the Transmission Control Protocol on port number 25.
+
+- port 587 should only be used for submissions [This port, coupled with TLS encryption] (i.e., mail client to mail server),
+- port 25 should only be used for relaying (i.e., mail server to mail server communications), and
+- port 465 should no longer be used at all.
+
+##### For test SMTP with CLI (PuTTY)
+
+- Request: 
+
+``` raw smtp.gmail.com 587 > HELO client – Host (Gmail) - Secure(TLS) – Port(587)```
+
+- Response: 
+
+```diff
+! 250 smtp.gmail.com at your service
+```
+
+* [SMTP CLI](https://www.mailgun.com/blog/which-smtp-port-understanding-ports-25-465-587/ "SMTP CLI")
+
+
+#### What is MIME?
+MIME (*Multipurpose Internet Mail Extensions*) is an Internet standard that extends the format of email messages to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs. Message bodies may consist of multiple parts, and header information may be specified in non-ASCII character sets. Email messages with MIME formatting are typically transmitted with standard protocols, such as the Simple Mail Transfer Protocol (SMTP), the Post Office Protocol (POP), and the Internet Message Access Protocol (IMAP). 
+
 #### What is Base64?
 In computer science, Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding.
 
@@ -20,8 +45,14 @@ Mortadha DAHMANI,mortadha.dahmani@gmail.com,A
 + bmFtZSxlbWFpbCxncmFkZQ0KSm9obiBEb2Usam9obi5kb2VAZ21haWwuY29tLEIrDQpNb3J0YWRoYSBEQUhNQU5JLG1vcnRhZGhhLmRhaG1hbmlAZ21haWwuY29tLEE=
 ```
 
-##### For test encode and decode
-* [Online converter](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html "AT Commands")
+##### For test encode and decode (Base64 > ASCII, etc.)
+* [Online converter](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html "Base64 converter")
+
+#### Useful links
+* [Base64](https://en.wikipedia.org/wiki/Base64 "Base64")
+* [MIME](https://en.wikipedia.org/wiki/MIME "MIME")
+* [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol "SMTP")
+
 
 ## Requirements
 - ``Python 2.7 or Python 3.4 and newer``
