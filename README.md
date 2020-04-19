@@ -1,4 +1,4 @@
-# PySendMail-Attachements :computer: :e-mail: :key:
+# PySendMail-Attachments :computer: :e-mail: :key:
 
 ## Summary
 #### What is Base64?
