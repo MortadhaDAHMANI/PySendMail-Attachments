@@ -1,4 +1,4 @@
-# PySendMail-Attachments :computer: :e-mail: :key:
+# PySendMail-Attachments SSL/TLS:computer: :e-mail: :key:
 
 ## Summary
 #### What is SMTP?
@@ -10,9 +10,14 @@ SMTP (*Simple Mail Transfer Protocol*) is a communication protocol for electroni
 
 ##### For test SMTP with CLI (PuTTY)
 
-- Request: 
+- Request:
 
-``` raw smtp.gmail.com 587 > HELO client – Host (Gmail) - Secure(TLS) – Port(587)```
+``` 
+$ sudo apt-get install putty putty-tools
+$ putty -raw smtp.gmail.com 587
+> HELO client
+> [HELO client – Host (Gmail) - Secure(TLS) – Port(587)]
+```
 
 - Response: 
 
