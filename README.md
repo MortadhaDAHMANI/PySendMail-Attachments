@@ -11,12 +11,21 @@ SMTP (*Simple Mail Transfer Protocol*) is a communication protocol for electroni
 ##### For test SMTP with CLI (PuTTY)
 
 - Request:
-
+###### Ubuntu CLI
 ``` 
 $ sudo apt-get install putty putty-tools
 $ putty -raw smtp.gmail.com 587
 > HELO client
 > [HELO client – Host (Gmail) - Secure(TLS) – Port(587)]
+```
+
+###### Windows
+``` 
+putty
+Host name: smtp.gmail.com 
+Port: 587
+Select: 'raw' in Connection type
+> HELO client
 ```
 
 - Response: 
