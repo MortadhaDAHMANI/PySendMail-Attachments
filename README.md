@@ -72,6 +72,8 @@ $ telnet smtp.domain.com 25
 * [SMTP Port](https://www.jscape.com/blog/smtp-ports "SMTP Port")
 * [OpenSSL I](https://www.catalyst2.com/knowledgebase/linux-command-line/debugging-smtp-issues-with-openssl/)
 * [OpenSSL II](https://www.stevenrombauts.be/2018/12/test-smtp-with-telnet-or-openssl/)
+* [Config Mail Linux](http://hints.macworld.com/article.php?story=20081217161612647)
+* [16 CMD to Send Mail](https://blog.edmdesigner.com/send-email-from-linux-command-line/#settingupcommandlinemailerpackages)
 
 #### What is MIME?
 MIME (*Multipurpose Internet Mail Extensions*) is an Internet standard that extends the format of email messages to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs. Message bodies may consist of multiple parts, and header information may be specified in non-ASCII character sets. Email messages with MIME formatting are typically transmitted with standard protocols, such as the Simple Mail Transfer Protocol (SMTP), the Post Office Protocol (POP), and the Internet Message Access Protocol (IMAP). 
