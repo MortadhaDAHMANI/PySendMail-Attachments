@@ -14,6 +14,13 @@ SMTP (*Simple Mail Transfer Protocol*) is a communication protocol for electroni
 ###### Ubuntu CLI
 ``` 
 $ sudo apt-get install putty putty-tools
+```
+###### CentOS CLI
+``` 
+$ sudo yum install putty
+```
+
+```
 $ putty -raw smtp.gmail.com 587
 > HELO client
 > [HELO client – Host (Gmail) - Secure(TLS) – Port(587)]
