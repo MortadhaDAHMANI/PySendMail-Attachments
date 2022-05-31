@@ -21,7 +21,7 @@ $ sudo yum install putty
 ```
 
 ```
-$ putty -raw smtp.gmail.com 587
+$ putty -raw smtp.gmail.com 587 (or putty -raw ssl0.ovh.net 587)
 > HELO client
 > [HELO client – Host (Gmail) - Secure(TLS) – Port(587)]
 ```
