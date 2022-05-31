@@ -8,8 +8,8 @@ SMTP (*Simple Mail Transfer Protocol*) is a communication protocol for electroni
 - port 25 should only be used for relaying (i.e., mail server to mail server communications), and
 - port 465 should no longer be used at all.
 
-##### For test SMTP with CLI (PuTTY)
-
+##### For test SMTP with CLI
+##### PuTTY
 - Request:
 ###### Ubuntu CLI
 ``` 
@@ -41,10 +41,37 @@ Select: 'raw' in Connection type
 ! 250 smtp.gmail.com at your service
 ```
 
+##### OpenSSL
+
+``` 
+$ sudo apt-get install openssl
+# or 
+$ sudo yum install openssl
+```
+
+###### To connect using the TLS protocol on port 587
+```
+$ openssl s_client -starttls smtp -connect ssl0.ovh.net:587
+```
+###### To use SSL on port 465
+```
+$ openssl s_client -connect ssl0.ovh.net:465
+```
+##### telnet
+``` 
+$ sudo apt-get install telnet
+# or 
+$ sudo yum install telnet
+
+$ telnet smtp.domain.com 25
+```
+
 #### Useful links
 * [SMTP CLI](https://www.mailgun.com/blog/which-smtp-port-understanding-ports-25-465-587/ "SMTP CLI")
 * [What SMTP](https://www.sparkpost.com/blog/what-smtp-port/ "What SMTP")
 * [SMTP Port](https://www.jscape.com/blog/smtp-ports "SMTP Port")
+* [OpenSSL I](https://www.catalyst2.com/knowledgebase/linux-command-line/debugging-smtp-issues-with-openssl/)
+* [OpenSSL II](https://www.stevenrombauts.be/2018/12/test-smtp-with-telnet-or-openssl/)
 
 #### What is MIME?
 MIME (*Multipurpose Internet Mail Extensions*) is an Internet standard that extends the format of email messages to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs. Message bodies may consist of multiple parts, and header information may be specified in non-ASCII character sets. Email messages with MIME formatting are typically transmitted with standard protocols, such as the Simple Mail Transfer Protocol (SMTP), the Post Office Protocol (POP), and the Internet Message Access Protocol (IMAP). 
